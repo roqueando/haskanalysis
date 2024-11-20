@@ -50,7 +50,10 @@ extra-doc-files:    CHANGELOG.md
 common warnings
     ghc-options: -Wall
 common extensions
-    other-extensions: OverloadedStrings
+    default-extensions: 
+        OverloadedStrings,
+        ExtendedDefaultRules,
+        DeriveGeneric
 
 executable haskanalysis
     -- Import common warning flags.
@@ -60,7 +63,7 @@ executable haskanalysis
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
-    other-modules: Json, XML, HTML, HTTP
+    other-modules: Json, XML, HTML, HTTP, Mongo, SQLite
 
 
     -- Other library packages from which modules are imported.
@@ -71,7 +74,9 @@ executable haskanalysis
                         bytestring,
                         hxt,
                         split,
-                        HandsomeSoup
+                        HandsomeSoup,
+                        mongoDB,
+                        sqlite-simple
 
     -- Directories containing source files.
     hs-source-dirs:   app

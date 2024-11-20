@@ -1,4 +1,3 @@
-{-# LANGUAGE DeriveGeneric #-}
 module Json where
 
 import GHC.Generics
@@ -23,6 +22,6 @@ run = do
   input <- B.readFile "data/input.json"
   let mm = decode input :: Maybe Mathematician
   case mm of
-    Nothing -> print "error parsing JSON"
+    Nothing -> print ("error parsing JSON" :: String)
     Just m -> (putStrLn . greet) m
   return ()
