@@ -1,4 +1,4 @@
-module XML where
+module ChapterOne.XML where
 
 import Text.XML.HXT.Core
 

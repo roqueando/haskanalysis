@@ -1,4 +1,4 @@
-module Json where
+module ChapterOne.JSON where
 
 import GHC.Generics
 import Data.Aeson

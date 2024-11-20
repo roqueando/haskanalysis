@@ -1,4 +1,4 @@
-module HTML where
+module ChapterOne.HTML where
 
 import Text.XML.HXT.Core
 import Data.List.Split (chunksOf)

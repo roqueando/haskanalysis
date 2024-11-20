@@ -1,4 +1,4 @@
-module Mongo where
+module ChapterOne.Mongo where
 
 import Database.MongoDB
 

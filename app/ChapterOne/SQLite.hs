@@ -1,4 +1,4 @@
-module SQLite where
+module ChapterOne.SQLite where
 
 import Database.SQLite.Simple
 

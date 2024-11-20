@@ -1,4 +1,4 @@
-module HTTP where
+module ChapterOne.HTTP where
 
 import Text.XML.HXT.Core
 import Text.HandsomeSoup
