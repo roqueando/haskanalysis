@@ -69,7 +69,13 @@ executable haskanalysis
                     ChapterOne.HTML,
                     ChapterOne.HTTP,
                     ChapterOne.Mongo,
-                    ChapterOne.SQLite
+                    ChapterOne.SQLite,
+                    ChapterTwo.Whitespace,
+                    ChapterTwo.Punctuation,
+                    ChapterTwo.MissingValues,
+                    ChapterTwo.Regex,
+                    ChapterTwo.Lexing,
+                    ChapterTwo.Duplicate
 
 
     -- Other library packages from which modules are imported.
@@ -82,7 +88,10 @@ executable haskanalysis
                         split,
                         HandsomeSoup,
                         mongoDB,
-                        sqlite-simple
+                        sqlite-simple,
+                        regex-posix,
+                        attoparsec,
+                        containers
 
     -- Directories containing source files.
     hs-source-dirs:   app
